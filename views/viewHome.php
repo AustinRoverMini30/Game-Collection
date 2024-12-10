@@ -6,6 +6,14 @@
     <title>Home</title>
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
 
+    </header>
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
 </body>
 </html>
