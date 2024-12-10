@@ -8,7 +8,18 @@
 <body>
     <!-- HEADER -->
     <header>
+    <div class="container">
+        <div id="logo">
+            <a href="viewHome.php"><image id="logoDuSite" src="" alt="Logo du site web"/> </a>
+        </div>
+        <div id="navigation">
+            <a href="viewBibliotheque.php"><button id="maBibliotheque">MA BIBLIOTHEQUE</button></a>
+            <a href="viewAjout.php"><button id="ajouter1Jeu">AJOUTER UN JEU</button></a>
+            <a href="viewClassements.php"><button id="classemenT">CLASSEMENT</button></a>
+            <a href="viewProfil.php"><button id="profil">PROFIL</button></a> 
+        </div>
 
+    </div>
     </header>
 
     <div id="banniereSalutation">
@@ -18,7 +29,7 @@
         <h1 id="l3BS"> JEUX A TA COLLECTION ?</h1>
     </div>
 
-    <div id="maBibliotheque">
+    <div id="mesJeux">
         <h2>Mes jeux</h2>
         <img id="jeuBackground" src="https://example.com/minecraft.jpg" alt="couverture deMinecraft"/> <br>
         <h1 class="nomJeu">Minecraft</h1>
