@@ -36,5 +36,7 @@ class DataBaseProcessor
     public function sendRequest($request)
     {
         $conn = $this->conn->sendRequest($request);
+
+        return $conn;
     }
 }
