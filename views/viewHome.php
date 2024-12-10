@@ -13,7 +13,7 @@
 
     <div id="banniereSalutation">
         <img id="imgBackground" src="" alt="image rectangulaire prenant toute la largeur de l'écran"/>
-        <h1 id="l1BS">SALUT PPRENOM !</h1> <br>
+        <h1 id="l1BS">SALUT PRENOM !</h1> <br>
         <h1 id="l2BS"> PRÊT A AJOUTER DES</h1> <br>
         <h1 id="l3BS"> JEUX A TA COLLECTION ?</h1>
     </div>
