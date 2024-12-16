@@ -1,5 +1,5 @@
 header {
-    background-color: #252836;
+    background-color: #211f2a;
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -15,7 +15,7 @@ footer {
 }
 
 body {
-    background-color: #252836;
+    background-color: #211f2a;
     color: white;
 }
 
