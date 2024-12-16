@@ -25,13 +25,13 @@
 
     <main>
         <div id="banniereSalutation">
-            <img id="imgBackground" src="" alt="image rectangulaire prenant toute la largeur de l'écran"/>
+            <img id="imgBackground" src="../assets/images/banniereExemple.jpeg" alt="image rectangulaire prenant toute la largeur de l'écran"/>
             <h1 id="l1BS">SALUT PRENOM !<br>PRÊT A AJOUTER DES<br>JEUX A TA COLLECTION ?</h1>
         </div>
 
         <div id="mesJeux">
             <h2>Mes jeux</h2>
-            <img class="jeuBackground" src="https://example.com/minecraft.jpg" alt="couverture deMinecraft"/> <br>
+            <img class="jeuBackground" src="" alt="couverture deMinecraft"/> <br>
             <h1 class="nomJeu">Minecraft</h1>
             <p class="heureJouees">120 heures</p> <br>
             <p class="plateformeJeu">Xbox</p>
