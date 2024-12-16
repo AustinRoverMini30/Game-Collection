@@ -1,5 +1,8 @@
 {
     "name": "vendor/composer",
+    "type": "project",
+    "description": "Game Collection Deploy",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Vendor\\Composer\\": "src/"
