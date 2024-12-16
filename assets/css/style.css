@@ -68,3 +68,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+footer {
+    background-color: #211f2a;
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px 0;
+    font-size: 14px;
+  }
