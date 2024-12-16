@@ -1,5 +1,5 @@
 <?php
 
-echo "";
+include 'controllers/controllerChoice.php';
 
 ?>
