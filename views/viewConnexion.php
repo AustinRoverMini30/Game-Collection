@@ -6,7 +6,7 @@
   <title>Footer</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
+<body class="connexion">
 <div class="form-container">
         <h1>Se connecter a Game Collection</h1>
         <form action="#" method="POST">
