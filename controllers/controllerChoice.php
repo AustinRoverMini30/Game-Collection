@@ -1,6 +1,6 @@
 <?php
 
-if (!isset($_GET["page"])) {
+if (isset($_GET["page"])) {
     if ($_GET["page"] == "accueil") {
         include 'controllerAccueil.php';
     }
