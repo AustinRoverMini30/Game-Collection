@@ -110,11 +110,11 @@ header {
 }
 
 #banniereSalutation h1{
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    /* transform: translate(-50%, -50%); */
+    /* text-align: center; */
     font-size: 2.5rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     line-height: 1.5;
