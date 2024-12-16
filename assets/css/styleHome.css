@@ -14,6 +14,11 @@ footer {
     position: relative;
 }
 
+body {
+    background-color: #252836;
+    color: white;
+}
+
 /* style accueil */
 .container {
     display: flex;
@@ -25,7 +30,7 @@ footer {
 #navigation a button {
     margin-left: 10px;
     padding: 10px 15px;
-    background-color: #6757d6;
+    background-color: #252836;
     color: white;
     border: none;
     border-radius: 5px;
@@ -35,13 +40,13 @@ footer {
 }
 
 #navigation a button:hover {
-    background-color: #ff8f81;
+    background-color: #9586f7;
 }
 
 #banniereSalutation {
     position: relative; 
     text-align: center; 
-    color: black;
+    color: white;
 }
 
 #banniereSalutation h1{
