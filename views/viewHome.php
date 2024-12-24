@@ -31,12 +31,12 @@
 
         <div id="mesJeux">
             <h2>Mes jeux</h2>
-            <img class="jeuBackground" src="" alt="couverture deMinecraft"/> <br>
+            <img class="jeuBackground" src="../assets/images/minecraftAffiche.jpg" alt="couverture deMinecraft"/> <br>
             <h1 class="nomJeu">Minecraft</h1>
             <p class="heureJouees">120 heures</p> <br>
             <p class="plateformeJeu">Xbox</p>
 
-            <img class="jeuBackground" src="https://example.com/fortnite.jpg" alt="couverture deFortnite"/> <br>
+            <img class="jeuBackground" src="../assets/images/forniteAffiche.jpg" alt="couverture deFortnite"/> <br>
             <h1 class="nomJeu">Fortnite</h1>
             <p class="heureJouees">200 heures</p> <br>
             <p class="plateformeJeu">PS5</p>
