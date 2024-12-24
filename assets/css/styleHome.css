@@ -11,7 +11,11 @@ footer {
     text-align: center; 
     padding: 20px 0;
     font-size: 14px;
-    position: relative;
+    position: fixed;
+    bottom: 0; 
+    left: 50%; /* Centre */
+    transform: translateX(-50%); /* parfaitement centré */
+    width: 100%; /*couvre toute la largeur */
 }
 
 body {
