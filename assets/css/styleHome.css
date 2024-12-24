@@ -21,6 +21,11 @@ footer {
 body {
     background-color: #211f2a;
     color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Assure que le contenu remplit la page */
+    display: flex;
+    flex-direction: column;
 }
 
 /* style accueil */
@@ -69,7 +74,7 @@ body {
 }
 
 #mesJeux {
-    padding: 20px; /*test*/
+    padding: 20px; 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -113,18 +118,30 @@ body {
     font-weight: bold;
 }
 
+/*positionner sur la meme ligne */
+.jeuInfo {
+    display: flex; /* Aligne les éléments sur une ligne */
+    justify-content: space-between; /* Titre à gauche, heures à droite */
+    align-items: center; /* Centre verticalement */
+    margin-top: 10px; /* Espace au-dessus */
+    padding: 0 5px; /* Espacement horizontal */
+}
+
 /* Position de chaque texte */
 .nomJeu {
-    top: 20%; /* Positionne le nom du jeu vers le haut */
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: #ff8f81;
+    font-weight: bold;
 }
 
 .heureJouees {
-    top: 50%; /* Positionne les heures jouées au centre */
     font-size: 1rem;
+    color: #c5c6c8;
+    font-weight: normal;
 }
 
 .plateformeJeu {
+    text-align: center;
     bottom: 10%; /* Positionne la plateforme en bas */
     font-size: 0.9rem;
     color: #c5c6c8;

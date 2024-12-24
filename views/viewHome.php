@@ -33,8 +33,10 @@
             <h2>Mes jeux</h2>
             <div class="jeu">
                 <img class="jeuBackground" src="../assets/images/minecraftAffiche.jpg" alt="couverture deMinecraft"/> <br>
-                <h1 class="nomJeu">Minecraft</h1>
-                <p class="heureJouees">120 heures</p> <br>
+                <div class="jeuInfo">
+                    <h1 class="nomJeu">Minecraft</h1>
+                    <p class="heureJouees">120 heures</p> <br>
+                </div>
                 <p class="plateformeJeu">Xbox</p>
             </div>
 
