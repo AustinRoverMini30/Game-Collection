@@ -31,15 +31,19 @@
 
         <div id="mesJeux">
             <h2>Mes jeux</h2>
-            <img class="jeuBackground" src="../assets/images/minecraftAffiche.jpg" alt="couverture deMinecraft"/> <br>
-            <h1 class="nomJeu">Minecraft</h1>
-            <p class="heureJouees">120 heures</p> <br>
-            <p class="plateformeJeu">Xbox</p>
+            <div class="jeu">
+                <img class="jeuBackground" src="../assets/images/minecraftAffiche.jpg" alt="couverture deMinecraft"/> <br>
+                <h1 class="nomJeu">Minecraft</h1>
+                <p class="heureJouees">120 heures</p> <br>
+                <p class="plateformeJeu">Xbox</p>
+            </div>
 
-            <img class="jeuBackground" src="../assets/images/forniteAffiche.jpg" alt="couverture deFortnite"/> <br>
-            <h1 class="nomJeu">Fortnite</h1>
-            <p class="heureJouees">200 heures</p> <br>
-            <p class="plateformeJeu">PS5</p>
+            <div class="jeu">
+                <img class="jeuBackground" src="../assets/images/forniteAffiche.jpg" alt="couverture deFortnite"/> <br>
+                <h1 class="nomJeu">Fortnite</h1>
+                <p class="heureJouees">200 heures</p> <br>
+                <p class="plateformeJeu">PS5</p>
+            </div>
         </div>
 
     </main>

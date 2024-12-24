@@ -74,6 +74,8 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     text-align: center;
+    position: relative; /* positionner les éléments enfants correctement */
+
 }
 
 #mesJeux h2 {
@@ -82,28 +84,48 @@ body {
     margin-bottom: 20px;
 }
 
-#mesJeux img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
+/* conteneur de chaque jeu */
+
+.jeu {
+    position: relative; /* Conteneur parent pour positionner les textes */
+    overflow: hidden; /* Coupe les éléments qui dépassent */
     border-radius: 10px;
 }
 
-.nomJeu {
-    margin: 10px 0 5px;
-    font-size: 1.2rem;
-    color: #ff8f81;
-}
-
-.heureJouees,
-.plateformeJeu {
-    font-size: 0.9rem;
-    color: #c5c6c8;
-}
-
+/* Images */
 .jeuBackground {
     width: 100%;
     height: 120px;
     object-fit: cover;
+    display: block;
     border-radius: 10px;
+}
+
+/*textes sur l'image*/
+
+.nomJeu, .heureJouees, .plateformeJeu {
+    position: absolute; /* au-dessus de l'image */
+    width: 100%; 
+    left: 0; 
+    text-align: center; 
+    color: white; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ombre pour améliorer la lisibilité */
+    font-weight: bold;
+}
+
+/* Position de chaque texte */
+.nomJeu {
+    top: 20%; /* Positionne le nom du jeu vers le haut */
+    font-size: 1.5rem;
+}
+
+.heureJouees {
+    top: 50%; /* Positionne les heures jouées au centre */
+    font-size: 1rem;
+}
+
+.plateformeJeu {
+    bottom: 10%; /* Positionne la plateforme en bas */
+    font-size: 0.9rem;
+    color: #c5c6c8;
 }
