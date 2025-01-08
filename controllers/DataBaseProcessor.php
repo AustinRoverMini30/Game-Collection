@@ -2,16 +2,18 @@
 
 class DataBaseProcessor
 {
+    private $host;
     private $dbname;
     private $username;
     private $password;
     private $conn;
 
-    public function __construct($dbname, $username, $password)
+    public function __construct()
     {
-        $this->dbname = $dbname;
-        $this->username = $username;
-        $this->password = $password;
+        $this->host = $_ENV['DB_HOST'];
+        $this->dbname = $_ENV['DB_NAME'];
+        $this->username = $_ENV['DB_USER'];
+        $this->password = $_ENV['DB_PASS'];
 
         $this->connect_to_database();
     }
@@ -31,12 +33,5 @@ class DataBaseProcessor
     public function getPdo()
     {
         return $this->conn;
-    }
-
-    public function sendRequest($request)
-    {
-        $conn = $this->conn->sendRequest($request);
-
-        return $conn;
     }
 }
