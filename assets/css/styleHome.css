@@ -18,6 +18,11 @@ footer {
     width: 100%; /*couvre toute la largeur */
 }
 
+#logoDuSite {
+    width: 20%;
+    height: auto;
+}
+
 body {
     background-color: #211f2a;
     color: white;

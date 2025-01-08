@@ -11,7 +11,7 @@
     <header>
     <div class="container">
         <div id="logo">
-            <a href="viewHome.php"><image id="logoDuSite" src="" alt="Logo du site web"/> </a>
+            <a href="accueil"><img id="logoDuSite" alt="Logo du site web" src="./assets/images/logo.png"></a>
         </div>
         <div id="navigation">
             <a href="viewBibliotheque.php"><button id="maBibliotheque">MA BIBLIOTHEQUE</button></a>

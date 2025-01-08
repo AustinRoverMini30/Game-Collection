@@ -161,6 +161,14 @@ class Functions
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function getIdentity(){
+        $pdo = $this->conn->getPdo();
+        $stmt = $pdo->prepare("SELECT prenom_util FROM UTILISATEUR WHERE id_util = :id");
+        $stmt->bindParam(':id', $_SESSION['user_id']);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
 }
 
 ?>
