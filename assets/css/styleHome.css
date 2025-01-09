@@ -34,12 +34,16 @@
 }
 
 #liste {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#mesJeuxTitre {
+    font-size: 200%;
 }
 
 #mesJeux {
-    padding: 20px; 
+ 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 20px;
@@ -102,6 +106,10 @@
 }
 
 .nomJeu {
+
+    display: flex;
+
+    height: 70%;
     margin-top: auto;
     margin-bottom: auto;
     color: white;
@@ -111,16 +119,21 @@
 
     text-align: left;
 
+    padding-left: 5%;
+
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 300%;
 }
 
 .plateformeJeu {
+    height: 30%;
+    padding-left: 5%;
     margin-top: auto;
     margin-bottom: auto;
     color: white;
-    font-size: 1rem;
+    font-size: 100%;
+    font-weight: 400;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 
     text-align: left;
@@ -130,7 +143,8 @@
     margin-top: auto;
     margin-bottom: auto;
     color: white;
-    font-size: 1rem;
+    font-size: 200%;
+    font-weight: 400;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 

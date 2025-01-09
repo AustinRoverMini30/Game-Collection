@@ -19,13 +19,13 @@
         </div>
 
         <div id="liste">
-            <h2>Mes jeux</h2>
+            <h2 id="mesJeuxTitre">Mes jeux</h2>
 
             <div id="mesJeux">
                 <div class="jeu" style="background-image:url('./assets/images/minecraftAffiche.jpg')">
                     <div class="jeuInfo">
                         <div class="jeuInfoLeft">
-                            <h2 class="nomJeu">Minecraft</h2>
+                            <h2 class="nomJeu">RED DEAD REDEMPTION</h2>
                             <h2 class="plateformeJeu">Xbox</h2>
                         </div>
                         <div class="jeuInfoRight">
