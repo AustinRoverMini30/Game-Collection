@@ -18,28 +18,158 @@
             <h1 id="l1BS">SALUT PRENOM !<br>PRÊT A AJOUTER DES<br>JEUX A TA COLLECTION ?</h1>
         </div>
 
+        <h2>Mes jeux</h2>
+
         <div id="mesJeux">
-            <h2>Mes jeux</h2>
-            <div class="jeu">
-                <img class="jeuBackground" src="./assets/images/minecraftAffiche.jpg" alt="couverture deMinecraft"/> <br>
+            <div class="jeu" style="background-image:url('./assets/images/minecraftAffiche.jpg')">
                 <div class="jeuInfo">
-                    <h1 class="nomJeu">Minecraft</h1>
-                    <p class="heureJouees">120 heures</p> <br>
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Minecraft</h2>
+                        <h2 class="plateformeJeu">Xbox</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
                 </div>
-                <p class="plateformeJeu">Xbox</p>
             </div>
 
-            <div class="jeu">
-                <img class="jeuBackground" src="../assets/images/forniteAffiche.jpg" alt="couverture deFortnite"/> <br>
-                <h1 class="nomJeu">Fortnite</h1>
-                <p class="heureJouees">200 heures</p> <br>
-                <p class="plateformeJeu">PS5</p>
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
             </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
+                <div class="jeuInfo">
+                    <div class="jeuInfoLeft">
+                        <h2 class="nomJeu">Fortnite</h2>
+                        <h2 class="plateformeJeu">PS5</h2>
+                    </div>
+                    <div class="jeuInfoRight">
+                        <h2 class="heureJouees">200 h</h2>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <!-- FOOTER -->
+        <?php include './views/partials/footer.php'; ?>
 
     </main>
 
-    <!-- FOOTER -->
-    <?php include './views/partials/footer.php'; ?>
 </body>
 </html>
