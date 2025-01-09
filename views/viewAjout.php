@@ -27,7 +27,7 @@
                 <div class="jeu" style="background-image:url('./assets/images/minecraftAffiche.jpg')">
                     <div class="jeuInfo">
                         <div class="jeuInfoLeft">
-                            <h2 class="nomJeu">RED DEAD REDEMPTION</h2>
+                            <h2 class="nomJeu">Red dead redemption</h2>
                             <h2 class="plateformeJeu">Xbox</h2>
                             <button class="boutonAjouter">AJOUTER A LA BIBLIOTHEQUE</button>
                         </div>
