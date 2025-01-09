@@ -37,7 +37,7 @@ footer {
     color: #ffffff; 
     text-align: center; 
     padding: 20px 0;
-    font-size: 14px;
+    font-size: 100%;
     justify-content: center;
     justify-items: center;
     width: 100%; /*couvre toute la largeur */
@@ -68,7 +68,7 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 130%;
     transition: background-color 0.3s ease;
 }
 

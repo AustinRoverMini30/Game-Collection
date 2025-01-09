@@ -109,6 +109,9 @@
 
     display: flex;
 
+    padding-top: 10%;
+    padding-bottom: auto;
+
     height: 70%;
     margin-top: auto;
     margin-bottom: auto;
