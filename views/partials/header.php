@@ -30,7 +30,7 @@
         </div>
         <div id="navigation">
             <a href="bibliotheque"><button id="maBibliotheque">MA BIBLIOTHEQUE</button></a>
-            <a href="formulaire"><button id="ajouter1Jeu">AJOUTER UN JEU</button></a>
+            <a href="ajout"><button id="ajouter1Jeu">AJOUTER UN JEU</button></a>
             <a href="classement"><button id="classemenT">CLASSEMENT</button></a>
             <a href="profil"><button id="profil">PROFIL</button></a> 
         </div>
