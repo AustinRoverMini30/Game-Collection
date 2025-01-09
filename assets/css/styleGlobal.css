@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    height: 10%;
+    height: 15%;
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
@@ -63,12 +63,12 @@ footer {
 #navigation a button {
     margin-left: 10px;
     padding: 10px 15px;
-    background-color: #252836;
+    background-color: transparent;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 20px;
     transition: background-color 0.3s ease;
 }
 

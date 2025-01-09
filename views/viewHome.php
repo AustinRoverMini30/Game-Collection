@@ -14,8 +14,8 @@
 
     <main>
         <div id="banniereSalutation">
-            <img id="imgBackground" src="./assets/images/banniereExemple.jpeg" alt="image rectangulaire prenant toute la largeur de l'écran"/>
-            <h1 id="l1BS">SALUT PRENOM !<br>PRÊT A AJOUTER DES<br>JEUX A TA COLLECTION ?</h1>
+
+            <h2 id="titre">SALUT PRENOM !<br>PRÊT A AJOUTER DES<br>JEUX A TA COLLECTION ?</h2>
         </div>
 
         <div id="liste">
