@@ -20,6 +20,11 @@
                     <th>Temps passés</th>
                     <th>Jeu favori</th>
                 </tr>
+                <tr>
+                    <td>Nicolas</td>
+                    <td>120h</td>
+                    <td>Sybéria</td>
+                </tr>
             </table>
             
         </div>
