@@ -14,7 +14,7 @@
 
     <main>
 
-        <div>
+        <div id="rechercheContainer">
             <h2 id="rechercheTitre">Ajouter un jeu à sa bibliothèque</h2>
             <input type="text" id="recherche" placeholder="Rechercher un jeu">
             <button id="boutonRechercher">RECHERCHER</button>
@@ -29,7 +29,7 @@
                         <div class="jeuInfoLeft">
                             <h2 class="nomJeu">RED DEAD REDEMPTION</h2>
                             <h2 class="plateformeJeu">Xbox</h2>
-                            <button>AJOUTER A LA BIBLIOTHEQUE</button>
+                            <button class="boutonAjouter">AJOUTER A LA BIBLIOTHEQUE</button>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                         <div class="jeuInfoLeft">
                             <h2 class="nomJeu">Fortnite</h2>
                             <h2 class="plateformeJeu">PS5</h2>
-                            <button>AJOUTER A LA BIBLIOTHEQUE</button>
+                            <button class="boutonAjouter">AJOUTER A LA BIBLIOTHEQUE</button>
                         </div>
                     </div>
                 </div>

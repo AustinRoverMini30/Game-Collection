@@ -10,24 +10,48 @@
     margin-right: 7%;
 }
 
-#résultatsTitre {
+#rechercheTitre {
     font-size: 200%;
 }
 
-#rechercheTitre {
+#résultatsTitre {
+    font-size: 150%;
+}
 
+#rechercheContainer {
+    margin-left: 7%;
+    margin-right: 7%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #recherche {
-
+    background-color: #2b2f40;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
 }
 
 #boutonRechercher {
+    background-color: #6757d6;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
 
 }
 
 .boutonAjouter {
-
+    position: relative;
+    background-color: #6757d6;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    margin-bottom: 10%;
+    margin-left: 5%;
 }
 
 #resultatJeux {
@@ -96,9 +120,6 @@
 .nomJeu {
 
     display: flex;
-
-    padding-top: 10%;
-    padding-bottom: auto;
 
     height: 70%;
     margin-top: auto;
