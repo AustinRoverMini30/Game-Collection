@@ -7,22 +7,21 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="connexion">
-<div class="form-container">
-        <h1>Se connecter a Game Collection</h1>
-        <form action="#" method="POST">
-            <label for="email_util">Email :</label>
-            <input type="email" id="email_util" name="email_util" required>
+    <main>
+        <div class="form-container">
+            <h1>Se connecter à Game Collection</h1>
+            <form action="#" method="POST">
+                <label for="email_util">Email :</label>
+                <input type="email" id="email_util" name="email_util" required>
 
-            <label for="password_util">Mot de passe :</label>
-            <input type="password" id="password_util" name="password_util" required>
+                <label for="password_util">Mot de passe :</label>
+                <input type="password" id="password_util" name="password_util" required>
 
-            <button type="submit">S'INSCRIRE</button>
+                <button type="submit">S'INSCRIRE</button>
 
-            <a href="#">Se connecter</a>
-        </form>
-    </div>
-    <footer>
-        Game Collection - 2024 - Tous droits réservés
-    </footer>
+                <a href="#">Se connecter</a>
+            </form>
+        </div> 
+    </main>
 </body>
 </html>
