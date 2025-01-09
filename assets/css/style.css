@@ -17,6 +17,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     width: 100%;
+    position: absolute; /* Permet de positionner précisément l'élément */
+    top: 50%;           /* Place l'élément au centre verticalement */
+    left: 50%;          /* Place l'élément au centre horizontalement */
+    transform: translate(-50%, -50%); /* Centre l'élément en ajustant sa position */
 }
 
 body.connexion {
