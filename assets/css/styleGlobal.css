@@ -41,7 +41,12 @@ footer {
     justify-content: center;
     justify-items: center;
     width: 100%; /*couvre toute la largeur */
-    height: 50px;
+    height: 100px;
+}
+
+footer p {
+    margin-top: 2%;
+    margin-bottom: auto;
 }
 
 #logo {
