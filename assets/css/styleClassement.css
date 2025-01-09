@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+
+
+.niv1 {
+    background-color: #252836;
+}
+
+.niv2 {
+    background-color: #505e9c; 
+}
+
