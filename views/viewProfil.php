@@ -10,7 +10,7 @@
 <body>
     <!-- HEADER -->
 
-    <?php include './partials/header.php'; ?>
+    <?php include './views/partials/header.php'; ?>
 
     <main>
 
