@@ -1,6 +1,6 @@
 <?php
 
-include 'views/viewProfil.php';
+include './views/viewProfil.php';
 
 ?>
 
