@@ -7,6 +7,9 @@ if (isset($_GET["page"])) {
     else if ($_GET["page"] == "ajout") {
         include 'controllerAjout.php';
     }
+    else if ($_GET["page"] == "bibliotheque") {
+        include 'controllerAjoutFormulaire.php';
+    }
     else if ($_GET["page"] == "formulaireAjout") {
         include 'controllerAjoutFormulaire.php';
     }
