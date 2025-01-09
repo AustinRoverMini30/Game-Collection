@@ -13,8 +13,7 @@
 
     <main>
 
-        <!-- FOOTER -->
-        <?php include './views/partials/footer.php'; ?>
+        <
 
     </main>
 
