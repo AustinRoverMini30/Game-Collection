@@ -1,6 +1,6 @@
 <?php
 
-require_once './views/viewProfil.php';
+include './views/viewProfil.php';
 
 ?>
 

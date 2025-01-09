@@ -12,7 +12,17 @@
     <?php include './views/partials/header.php'; ?>
 
     <main>
-
+        <div class="bloc-classement">
+            <h1>Classement des temps passés</h1>
+            <table>
+                <tr>
+                    <th>Joueur</th>
+                    <th>Temps passés</th>
+                    <th>Jeu favori</th>
+                </tr>
+            </table>
+            
+        </div>
         <!-- FOOTER -->
         <?php include './views/partials/footer.php'; ?>
 
