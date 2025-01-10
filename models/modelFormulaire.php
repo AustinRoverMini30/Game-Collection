@@ -1,5 +1,7 @@
 <?php
 
-include 'views/viewAFormulaire.php';
+class ModelFormulaire {
+    
+}
 
 ?>
