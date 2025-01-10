@@ -1,5 +1,5 @@
 <?php
 
-include './views/viewAjoutFormulaire.php';
+include './views/viewJeu.php';
 
 ?>

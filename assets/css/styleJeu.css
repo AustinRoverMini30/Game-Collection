@@ -1,0 +1,17 @@
+#jeu {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 7%;
+    margin-right: 7%;
+}
+#left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+#right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
