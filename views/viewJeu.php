@@ -21,14 +21,14 @@
                     <p>Temps passé : 60 h</p>
                 </div>
 
-                <div>
+                <div id="formulaire">
                     <h2>Ajouter du temps passé sur le jeu</h2>
 
                     <h3>Temps passé sur le jeu</h3>
                     <input type="number" name="tempsJeu" id="tempsJeu" placeholder="Temps passé sur le jeu" required class="inputText">
 
-                    <button>AJOUTER</button>
-                    <button>SUPPRIMER LE JEU DE MA BIBLIOTHEQUE</button>
+                    <button class="buttonForm">AJOUTER</button>
+                    <button class="buttonForm">SUPPRIMER LE JEU DE MA BIBLIOTHEQUE</button>
                 </div>
             </div>
             <div id="right">
