@@ -14,17 +14,15 @@ header {
     background-color: #211f2a;
     display: flex;
     justify-content: center;
-    height: 15vh;
+    padding: 10px 0;
+    height: 15%;
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    top: 10vh;
-    min-height: 75vh;
+    top: 10%;
     height: 90%;
     width: 100%;
     overflow-x: auto;
@@ -38,10 +36,12 @@ footer {
     background-color: #211f2a;
     color: #ffffff; 
     text-align: center; 
+    padding: 20px 0;
     font-size: 100%;
     justify-content: center;
     justify-items: center;
     width: 100%; /*couvre toute la largeur */
+    height: 100px;
 }
 
 footer p {
