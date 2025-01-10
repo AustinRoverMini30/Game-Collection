@@ -10,16 +10,16 @@
     <main>
         <div class="form-container">
             <h1>Se connecter à Game Collection</h1>
-            <form action="#" method="POST">
+            <form action="connexion" method="POST">
                 <label for="email_util">Email :</label>
                 <input type="email" id="email_util" name="email_util" required>
 
                 <label for="password_util">Mot de passe :</label>
                 <input type="password" id="password_util" name="password_util" required>
 
-                <button type="submit">S'INSCRIRE</button>
+                <button type="submit">SE CONNECTER</button>
 
-                <a href="#">Se connecter</a>
+                <a href="inscription">S'inscrire</a>
             </form>
         </div> 
     </main>

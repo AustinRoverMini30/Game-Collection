@@ -2,12 +2,6 @@
 
 class Functions
 {
-    private $conn;
-
-    public function __construct($dbname, $username, $password)
-    {
-        $this->conn = new DataBaseProcessor($dbname, $username, $password);
-    }
 
     public function deleteUser($id)
     {

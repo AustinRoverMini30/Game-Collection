@@ -15,35 +15,19 @@
     <main>
 
         <div id="rechercheContainer">
-            <h2 id="rechercheTitre">Ajouter un jeu à sa bibliothèque</h2>
-            <input type="text" id="recherche" placeholder="Rechercher un jeu">
-            <button id="boutonRechercher">RECHERCHER</button>
+            <form action="ajout" method="POST">
+                <h2 id="rechercheTitre">Ajouter un jeu à sa bibliothèque</h2>
+                <input type="text" id="recherche" name="recherche" placeholder="Rechercher un jeu" required>
+                <button type="submit" id="boutonRechercher">RECHERCHER</button>
+            </form>
+
         </div>
 
         <div id="liste">
             <h2 id="résultatsTitre">Résultats de la recherche</h2>
 
             <div id="resultatJeux">
-                <div class="jeu" style="background-image:url('./assets/images/minecraftAffiche.jpg')">
-                    <div class="jeuInfo">
-                        <div class="jeuInfoLeft">
-                            <h2 class="nomJeu">Red dead redemption</h2>
-                            <h2 class="plateformeJeu">Xbox</h2>
-                            <button class="boutonAjouter">AJOUTER A LA BIBLIOTHEQUE</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="jeu" style="background-image:url('./assets/images/forniteAffiche.jpg')">
-                    <div class="jeuInfo">
-                        <div class="jeuInfoLeft">
-                            <h2 class="nomJeu">Fortnite</h2>
-                            <h2 class="plateformeJeu">PS5</h2>
-                            <button class="boutonAjouter">AJOUTER A LA BIBLIOTHEQUE</button>
-                        </div>
-                    </div>
-                </div>
-
+                <?php echo $result ?>
             </div>
         </div>
 
