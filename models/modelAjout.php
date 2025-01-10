@@ -18,6 +18,7 @@ class ModelAjout {
 
     public function getAllGamesMatches($search)
     {
+        $search = "%".$search."%";
         $stmt = $this->pdo->prepare("SELECT * FROM JEU WHERE nom_jeu LIKE :search");
         $stmt->bindParam(':search', $search);
         $stmt->execute();
