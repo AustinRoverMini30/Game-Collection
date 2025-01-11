@@ -58,7 +58,12 @@ main {
     height: 50px;
     border: none;
     border-radius: 10px;
-    width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: fit-content;
 }
 
 #connexion {
