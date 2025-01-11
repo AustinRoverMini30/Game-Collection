@@ -1,0 +1,23 @@
+.bloc-classement {
+    margin: 20px; 
+}
+
+.bloc-classement h1 {
+    text-align: left; /* Aligne le titre à gauche */
+    margin-left: 10%; /* Aligne le titre avec le bord gauche du tableau */
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.niv1{
+    background-color: #252836;
+}
+
+.niv2{
+    background-color: #505E9C;
+}
