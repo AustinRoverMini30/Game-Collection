@@ -17,24 +17,6 @@ class ModelProfil {
         $stmt->execute();
     }
 
-    public function updateUser($userId, $nom, $prenom, $mail)
-    {
-        $stmt = $this->pdo->prepare("UPDATE UTILISATEUR SET nom_util = :nom, prenom_util = :prenom, email_util = :mail WHERE id_util = :userId");
-        $stmt->bindParam(':userId', $userId);
-        $stmt->bindParam(':nom', $nom);
-        $stmt->bindParam(':prenom', $prenom);
-        $stmt->bindParam(':mail', $mail);
-        $stmt->execute();
-    }
-
-    public function updatePwd($userId, $pwd)
-    {
-        $stmt = $this->pdo->prepare("UPDATE UTILISATEUR SET password_util = :pwd WHERE id_util = :userId");
-        $stmt->bindParam(':userId', $userId);
-        $stmt->bindParam(':pwd', password_hash($pwd, PASSWORD_BCRYPT));
-        $stmt->execute();
-    }
-
     public function getUser($id)
     {
         $stmt = $this->pdo->prepare("SELECT * FROM UTILISATEUR WHERE id_util = :id");

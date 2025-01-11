@@ -8,7 +8,7 @@ if (isset($_POST['recherche'])) {
     $result = $model->getAllGamesMatches($_POST['recherche']);
 
     switch ($result) {
-        case "":
+        case "<h2 id=\"résultatsTitre\">Résultats de la recherche</h2><div id=\"resultatJeux\"></div>":
             header('Location: formulaireAjout');
             break;
         default:

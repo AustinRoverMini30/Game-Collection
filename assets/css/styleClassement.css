@@ -1,5 +1,6 @@
 .bloc-classement {
-    margin: 20px; 
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .bloc-classement h1 {
@@ -12,12 +13,15 @@ table {
     width: 80%;
     margin: 0 auto;
     text-align: left;
+    height: 100%;
 }
 
 .niv1{
     background-color: #252836;
+    height: 50px;
 }
 
 .niv2{
-    background-color: #505E9C;
+    background-color: #211f2a;
+    height: 50px;
 }

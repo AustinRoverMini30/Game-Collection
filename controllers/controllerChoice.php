@@ -33,8 +33,8 @@ if (isset($_GET["page"]) && ($_GET["page"] == "inscription")) {
         else if ($_GET["page"] == "formulaire") {
             include 'controllerFormulaire.php';
         }
-        else if ($_GET["page"] == "modificationJeu") {
-            include 'controllerModificationJeu.php';
+        else if ($_GET["page"] == "editProfil") {
+            include 'controllerEditProfil.php';
         }
         else if ($_GET["page"] == "profil") {
             include 'controllerProfil.php';

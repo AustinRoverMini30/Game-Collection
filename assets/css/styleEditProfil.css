@@ -9,6 +9,11 @@ main {
     margin-left: 3em;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 form input {
     width: 100%;
     padding: 10px;
