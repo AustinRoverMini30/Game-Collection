@@ -14,8 +14,8 @@
 
     <main>
 
-        <div id="rechercheContainer">
-            <form action="ajout" method="POST">
+        <div>
+            <form action="ajout" method="POST" id="rechercheContainer">
                 <h2 id="rechercheTitre">Ajouter un jeu à sa bibliothèque</h2>
                 <input type="text" id="recherche" name="recherche" placeholder="Rechercher un jeu" required>
                 <button type="submit" id="boutonRechercher">RECHERCHER</button>
