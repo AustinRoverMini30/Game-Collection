@@ -21,7 +21,7 @@ class modelHome {
         foreach ($stmt as $row) {
 
             $result .= "<form action='jeu' method='post' class='jeu' style='background-image:url(".$row['URL_cover'].")'>";
-            $result .= "    <input type='hidden' name='id_jeu' value='".$row['id_jeu']."'>";
+            $result .= "    <input type='hidden' name='idJeu' value='".$row['id_jeu']."'>";
             $result .= "    <button type='submit' style='all: unset; cursor: pointer; width: 100%; height: 100%;'>";
             $result .= "        <div class='jeuInfo'>";
             $result .= "            <div class='jeuInfoLeft'>";

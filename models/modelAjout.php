@@ -46,13 +46,19 @@ class ModelAjout {
         foreach ($stmt as $row) {
         $result .= "    <div class=\"jeu\" style=\"background-image:url('".$row['URL_cover']."')\">";
         $result .= "        <div class=\"jeuInfo\">";
-        $result .= "                <form action='ajout' method='POST' class=\"jeuInfoLeft\">";
+
+        if (isset($row['id_util'])) {
+            $result .= "                <form action='jeu' method='POST' class=\"jeuInfoLeft\">";
+        }else{
+            $result .= "                <form action='ajout' method='POST' class=\"jeuInfoLeft\">";
+        }
+
         $result .= "                    <input type=\"hidden\" name=\"idJeu\" value=\"".$row['id_jeu']."\">";
         $result .= "                    <h2 class=\"nomJeu\">".$row['nom_jeu']."</h2>";
         $result .= "                    <h2 class=\"plateformeJeu\">".$row['plateformes_jeu']."</h2>";
 
         if (isset($row['id_util'])) {
-            $result .= "                    <button type=\"submit\" class=\"boutonAjouter\" disabled>JEU POSSÉDÉ</button></form>";
+            $result .= "                    <button type=\"submit\" class=\"boutonAjouter\">JEU POSSÉDÉ</button></form>";
         }else{
             $result .= "                    <button type=\"submit\" class=\"boutonAjouter\">AJOUTER A LA BIBLIOTHEQUE</button></form>";
         }
