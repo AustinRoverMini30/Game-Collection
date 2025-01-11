@@ -1,0 +1,43 @@
+#jeu {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 7%;
+    margin-right: 7%;
+}
+#left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+#right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#formulaire {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputText {
+    background-color: #2b2f40;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    padding: 1%;
+    color: white;
+}
+
+.buttonForm {
+    background-color: #6757d6;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 1%;
+
+    cursor: pointer;
+}

@@ -1,5 +1,9 @@
 <?php
 
-include 'views/viewHome.php';
+include './models/modelHome.php';
+
+$model = new ModelHome($pdo);
+
+include './views/viewHome.php';
 
 ?>

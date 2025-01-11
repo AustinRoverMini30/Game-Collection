@@ -8,12 +8,11 @@ class DataBaseProcessor
     private $password;
     private $conn;
 
-    public function __construct()
+    public function __construct($dbname, $username, $password)
     {
-        $this->host = $_ENV['DB_HOST'];
-        $this->dbname = $_ENV['DB_NAME'];
-        $this->username = $_ENV['DB_USER'];
-        $this->password = $_ENV['DB_PASS'];
+        $this->dbname = $dbname;
+        $this->username = $username;
+        $this->password = $password;
 
         $this->connect_to_database();
     }
