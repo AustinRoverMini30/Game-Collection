@@ -27,7 +27,7 @@
                     <h3>Temps passé sur le jeu</h3>
                     <input type="number" name="tempsJeu" id="tempsJeu" placeholder="Temps passé sur le jeu" required class="inputText" value="<?php echo $result['nb_heures_jouees'] ?>">
 
-                    <input type="hidden" name="id_jeu" value="<?php echo $result['id_jeu'] ?>">
+                    <input type="hidden" name="idJeu" value="<?php echo $result['id_jeu'] ?>">
 
                     <button class="buttonForm" type="submit" name="update">AJOUTER</button>
                     <button class="buttonForm" type="submit" name="delete">SUPPRIMER LE JEU DE MA BIBLIOTHEQUE</button>
