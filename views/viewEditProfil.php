@@ -5,7 +5,7 @@
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styleGlobal.css">
     <link rel="stylesheet" href="./assets/css/styleEditProfil.css">
-    <title>Home</title>
+    <title>Modification du profil</title>
 </head>
 <body>
     <!-- HEADER -->

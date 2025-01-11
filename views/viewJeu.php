@@ -5,7 +5,7 @@
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styleGlobal.css">
     <link rel="stylesheet" href="./assets/css/styleJeu.css">
-    <title>Home</title>
+    <title><?php echo $result['nom_jeu'] ?></title>
 </head>
 <body>
     <!-- HEADER -->

@@ -5,7 +5,7 @@
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styleGlobal.css">
     <link rel="stylesheet" href="./assets/css/styleHome.css">
-    <title>Home</title>
+    <title>Bibliothèque</title>
 </head>
 <body>
     <!-- HEADER -->
