@@ -26,20 +26,21 @@ class ModelAjout {
 
     public function getAllGamesMatches($search)
     {
-        $search = "%".$search."%";
+        $result = "";
+
+        if ($search == "") {
+            $result .= "<h2 id=\"résultatsTitre\">Jeux disponibles</h2>";
+            $search = "%";
+        }else{
+            $result = "<h2 id=\"résultatsTitre\">Résultats de la recherche</h2>";
+        }
+        
+
         $stmt = $this->pdo->prepare("SELECT * FROM BIBLIOTHEQUE RIGHT JOIN JEU ON BIBLIOTHEQUE.id_jeu = JEU.id_jeu WHERE (id_util IS NULL OR id_util = :id) AND nom_jeu LIKE :search");
         $stmt->bindParam(':search', $search);
         $stmt->bindParam(':id', $_SESSION['user_id']);
         $stmt->execute();
         $stmt = $stmt->fetchAll();
-
-        $result = "";
-
-        if ($search == "%%") {
-            $result .= "<h2 id=\"résultatsTitre\">Jeux disponibles</h2>";
-        }else{
-            $result = "<h2 id=\"résultatsTitre\">Résultats de la recherche</h2>";
-        }
 
         $result .= "<div id=\"resultatJeux\">";
 
