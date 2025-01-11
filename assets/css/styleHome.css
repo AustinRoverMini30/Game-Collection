@@ -36,8 +36,8 @@
 }
 
 #liste {
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #mesJeuxTitre {
@@ -47,7 +47,7 @@
 #mesJeux {
  
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 20px;
     text-align: center;
     position: relative; /* positionner les éléments enfants correctement */
@@ -64,7 +64,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 450px;
+    height: 400px;
 
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
