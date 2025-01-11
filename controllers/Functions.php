@@ -40,33 +40,6 @@ class Functions
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function getGameWithId($id)
-    {
-        $pdo = $this->conn->getPdo();
-        $stmt = $pdo->prepare("SELECT * FROM JEU WHERE id_jeu = :id");
-        $stmt->bindParam(':id', $id);
-        $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_ASSOC);
-    }
-
-    public function removeGameFromLibrary($userId, $gameId)
-    {
-        $pdo = $this->conn->getPdo();
-        $stmt = $pdo->prepare("DELETE FROM BIBLIOTHEQUE WHERE id_util = :userId AND id_jeu = :gameId");
-        $stmt->bindParam(':userId', $userId);
-        $stmt->bindParam(':gameId', $gameId);
-        $stmt->execute();
-    }
-
-    public function updateNbHours($userId, $gameId, $nbHours)
-    {
-        $pdo = $this->conn->getPdo();
-        $stmt = $pdo->prepare("UPDATE BIBLIOTHEQUE SET nb_heures_jouees = :nbHours WHERE id_util = :userId AND id_jeu = :gameId");
-        $stmt->bindParam(':userId', $userId);
-        $stmt->bindParam(':gameId', $gameId);
-        $stmt->bindParam(':nbHours', $nbHours);
-        $stmt->execute();
-    }
 }
 
 ?>

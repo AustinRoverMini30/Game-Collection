@@ -24,11 +24,7 @@
         </div>
 
         <div id="liste">
-            <h2 id="résultatsTitre">Résultats de la recherche</h2>
-
-            <div id="resultatJeux">
-                <?php echo $result ?>
-            </div>
+            <?php echo $result ?>
         </div>
 
         <!-- FOOTER -->

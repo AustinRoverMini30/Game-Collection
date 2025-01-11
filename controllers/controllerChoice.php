@@ -39,6 +39,9 @@ if (isset($_GET["page"]) && ($_GET["page"] == "inscription")) {
         else if ($_GET["page"] == "profil") {
             include 'controllerProfil.php';
         }
+        else if ($_GET["page"] == "jeu") {
+            include 'controllerJeu.php';
+        }
         else if ($_GET["page"] == "deconnexion"){
             session_destroy();
             include 'controllerConnexion.php';

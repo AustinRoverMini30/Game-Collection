@@ -20,17 +20,20 @@ class modelHome {
 
         foreach ($stmt as $row) {
 
-            $result .= "    <div class=\"jeu\" style=\"background-image:url('".$row['URL_cover']."')\">";
-            $result .= "        <div class=\"jeuInfo\">";
-            $result .= "            <div class=\"jeuInfoLeft\">";
-            $result .= "                <h2 class=\"nomJeu\">".$row['nom_jeu']."</h2>";
-            $result .= "                <h2 class=\"plateformeJeu\">".$row['plateformes_jeu']."</h2>";
+            $result .= "<form action='jeu' method='post' class='jeu' style='background-image:url(".$row['URL_cover'].")'>";
+            $result .= "    <input type='hidden' name='id_jeu' value='".$row['id_jeu']."'>";
+            $result .= "    <button type='submit' style='all: unset; cursor: pointer; width: 100%; height: 100%;'>";
+            $result .= "        <div class='jeuInfo'>";
+            $result .= "            <div class='jeuInfoLeft'>";
+            $result .= "                <h2 class='nomJeu'>".$row['nom_jeu']."</h2>";
+            $result .= "                <h2 class='plateformeJeu'>".$row['plateformes_jeu']."</h2>";
             $result .= "            </div>";
-            $result .= "            <div class=\"jeuInfoRight\">";
-            $result .= "                <h2 class=\"heureJouees\">".$row['nb_heures_jouees']." h</h2>";
+            $result .= "            <div class='jeuInfoRight'>";
+            $result .= "                <h2 class='heureJouees'>".$row['nb_heures_jouees']." h</h2>";
             $result .= "            </div>";
             $result .= "        </div>";
-            $result .= "    </div>";
+            $result .= "    </button>";
+            $result .= "</form>";
         }
 
         return $result;

@@ -12,8 +12,11 @@ if (isset($_POST['recherche'])) {
     }else{
         include './views/viewAjout.php';
     }
+}else if (isset($_POST['idJeu'])) {
+    $model->addGameToLibrary($_SESSION['user_id'], $_POST['idJeu']);
+    header("Location : accueil");
 }else{
-    $result = "";
+    $result = $model->getAllGamesMatches("");
     include './views/viewAjout.php';
 }
 
