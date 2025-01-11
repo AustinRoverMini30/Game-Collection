@@ -10,10 +10,18 @@ class ModelAjout {
     }
     public function addGameToLibrary($userId, $gameId)
     {
-        $stmt = $this->pdo->prepare("INSERT INTO BIBLIOTHEQUE (id_util, id_jeu, nb_heures_jouees) VALUES (:userId, :gameId, 0)");
+
+        $stmt = $this->pdo->prepare("SELECT * FROM BIBLIOTHEQUE WHERE id_util = :userId AND id_jeu = :gameId");
         $stmt->bindParam(':userId', $userId);
         $stmt->bindParam(':gameId', $gameId);
         $stmt->execute();
+
+        if (!isset($stmt->fetch(PDO::FETCH_ASSOC)['id_util'])) {
+            $stmt = $this->pdo->prepare("INSERT INTO BIBLIOTHEQUE (id_util, id_jeu, nb_heures_jouees) VALUES (:userId, :gameId, 0)");
+            $stmt->bindParam(':userId', $userId);
+            $stmt->bindParam(':gameId', $gameId);
+            $stmt->execute();
+        }
     }
 
     public function getAllGamesMatches($search)

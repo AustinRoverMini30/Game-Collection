@@ -7,15 +7,18 @@ $model = new ModelAjout($pdo);
 if (isset($_POST['recherche'])) {
     $result = $model->getAllGamesMatches($_POST['recherche']);
 
-    if ($result == "") {
-        header('Location: formulaireAjout');
-    }else{
-        include './views/viewAjout.php';
+    switch ($result) {
+        case "":
+            header('Location: formulaireAjout');
+            break;
+        default:
+            include './views/viewAjout.php';
+            break;
     }
-}else if (isset($_POST['idJeu'])) {
+} else if (isset($_POST['idJeu'])) {
     $model->addGameToLibrary($_SESSION['user_id'], $_POST['idJeu']);
-    header("Location : accueil");
-}else{
+    header("Location: ajout");
+} else {
     $result = $model->getAllGamesMatches("");
     include './views/viewAjout.php';
 }
