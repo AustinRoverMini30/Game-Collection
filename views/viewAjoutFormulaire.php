@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styleGlobal.css">
     <link rel="stylesheet" href="./assets/css/styleAjoutFormulaire.css">
     <title>Ajout d'un nouveau jeu</title>

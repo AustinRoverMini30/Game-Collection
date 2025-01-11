@@ -29,10 +29,10 @@
             </a>
         </div>
         <div id="navigation">
-            <a href="bibliotheque"><button id="maBibliotheque">MA BIBLIOTHEQUE</button></a>
-            <a href="ajout"><button id="ajouter1Jeu">AJOUTER UN JEU</button></a>
-            <a href="classement"><button id="classemenT">CLASSEMENT</button></a>
-            <a href="profil"><button id="profil">PROFIL</button></a> 
+            <a href="bibliotheque" id="maBibliotheque">MA BIBLIOTHEQUE</a>
+            <a href="ajout" id="ajouter1Jeu">AJOUTER UN JEU</a>
+            <a href="classement" id="classemenT">CLASSEMENT</a>
+            <a href="profil" id="profil">PROFIL</a> 
         </div>
 
     </div>
