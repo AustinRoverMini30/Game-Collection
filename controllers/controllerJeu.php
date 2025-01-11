@@ -4,8 +4,6 @@ include './models/modelJeu.php';
 
 $model = new ModelJeu($pdo);
 
-var_dump($_POST);
-
 if (isset($_POST['id_jeu'])){
 
     if (isset($_POST['delete'])){
