@@ -60,7 +60,7 @@
                 </div>
                 <div>
                     <h3>URL du site</h3>
-                    <input type="url" name="siteJeu" id="siteJeu" placeholder="URL du site" value="jeu" class="inputText">
+                    <input type="url" name="siteJeu" id="siteJeu" placeholder="URL du site" value="" class="inputText">
                 </div>
 
                 <button id="buttonAjout">AJOUTER LE JEU</button>
