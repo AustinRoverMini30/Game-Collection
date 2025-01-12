@@ -150,12 +150,13 @@
 .nomJeu {
 
     display: flex;
+    flex-direction: column;
 
     height: 70%;
     margin-top: auto;
     margin-bottom: auto;
     color: white;
-    font-size: 1.5rem;
+    font-size: xx-large;
     font-weight: bold;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 
@@ -165,7 +166,6 @@
 
     font-style: normal;
     font-weight: 700;
-    font-size: 300%;
 }
 
 .plateformeJeu {
