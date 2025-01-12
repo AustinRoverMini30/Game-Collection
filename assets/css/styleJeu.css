@@ -44,10 +44,11 @@
     cursor: pointer;
     width: fit-content;
 
-    transition: transform 0.9s;
+    transition: transform 0.9s, background-color 0.9s;
 }
 
 .buttonForm:hover {
+    background-color: #1800b4;
     transform: scale(1.1);
 }
 
