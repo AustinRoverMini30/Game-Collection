@@ -19,7 +19,7 @@ table {
 .niv1{
     background-color: #252836;
     height: 50px;
-    transition: transform 0.9s;
+    transition: transform 0.5s;
 }
 
 .niv1:hover {
@@ -29,7 +29,7 @@ table {
 .niv2{
     background-color: #211f2a;
     height: 50px;
-    transition: transform 0.9s;
+    transition: transform 0.5s;
 }
 
 .niv2:hover {

@@ -67,7 +67,7 @@
     height: 400px;
 
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.9s;
+    transition: transform 0.5s;
 }
 
 .jeu:hover {
