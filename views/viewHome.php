@@ -15,7 +15,7 @@
     <main>
         <div id="banniereSalutation">
 
-            <h2 id="titre">SALUT <?php echo $model->getIdentity() ?> !<br>PRÊT A AJOUTER DES<br>JEUX A TA COLLECTION ?</h2>
+            <h2 id="titre">Salut <?php echo $model->getIdentity() ?> !<br>prêt à ajouter des<br>jeux à ta collection ?</h2>
         </div>
 
         <div id="liste">
