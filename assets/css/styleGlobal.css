@@ -84,6 +84,10 @@ footer p {
 }
 
 .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: red;
     color: white;
     text-align: center;

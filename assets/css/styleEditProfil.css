@@ -40,3 +40,7 @@ button {
     margin-bottom: 2%;
     width: fit-content;
 }
+
+.error{
+    height: 5%;
+}

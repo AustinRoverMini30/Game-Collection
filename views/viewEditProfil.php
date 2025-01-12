@@ -14,6 +14,8 @@
 
     <main>
 
+        <?php echo $error ?>
+
         <div class=clause-profil>
             <h2>Mon profil</h2>
 

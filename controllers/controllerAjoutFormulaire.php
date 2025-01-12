@@ -4,6 +4,8 @@ include './models/modelAjoutFormulaire.php';
 
 $model = new ModelAjoutFormulaire($pdo);
 
+$error = '';
+
 if (isset($_POST['nomJeu']) && isset($_POST['editeurJeu']) && isset($_POST['sortieJeu']) && isset($_POST['plateforme']) && isset($_POST['descriptionJeu']) && isset($_POST['coverJeu']) && isset($_POST['siteJeu'])) {
     $nomJeu = $_POST['nomJeu'];
     $editeurJeu = $_POST['editeurJeu'];

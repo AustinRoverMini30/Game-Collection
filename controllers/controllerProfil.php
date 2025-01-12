@@ -24,10 +24,9 @@ else {
     $nom = $user['nom_util'];
     $prenom = $user['prenom_util'];
     $mail = $user['email_util'];
+
+    include './views/viewProfil.php';
 }
-
-
-include './views/viewProfil.php';
 
 ?>
 
