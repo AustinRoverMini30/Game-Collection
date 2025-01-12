@@ -8,12 +8,14 @@
 #left {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
+    padding-right: 20%;
 }
 #right {
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: 65vh;
 }
 
 #formulaire {
