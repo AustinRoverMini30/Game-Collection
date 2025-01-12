@@ -17,6 +17,7 @@
             <div id="left">
                 <div>
                     <h2><?php echo $result['nom_jeu'] ?></h2>
+                    <p><?php echo $result['desc_jeu'] ?></p>
                     <p><?php echo $model->getGamePlatforms($result['id_jeu']) ?></p>
                     <p>Temps passé : <?php echo $result['nb_heures_jouees'] ?> h</p>
                 </div>
@@ -34,7 +35,7 @@
                 </form>
             </div>
             <div id="right">
-                <img src="<?php echo $result['URL_cover'] ?>" alt="">
+                <a href="<?php echo $result['URL_site'] ?>" id="site"><img src="<?php echo $result['URL_cover'] ?>" alt=""></a>
             </div>
         </div>
 

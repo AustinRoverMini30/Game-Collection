@@ -34,4 +34,9 @@ button {
     font-weight: bold;
     margin-bottom: 2%;
     width: fit-content;
+    transition: transform 0.9s;
+}
+
+button:hover {
+    transform: scale(1.1);
 }

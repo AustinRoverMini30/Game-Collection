@@ -43,4 +43,29 @@
 
     cursor: pointer;
     width: fit-content;
+
+    transition: transform 0.9s;
+}
+
+.buttonForm:hover {
+    transform: scale(1.1);
+}
+
+#site {
+    height: 100%;
+    width: 100%;
+}
+
+#site img{
+    height: 100%;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.9s;
+}
+
+#site img:hover {
+    transform: scale(1.1);
 }

@@ -52,7 +52,7 @@
                 </div>
                 <div>
                     <h3>Description du jeu</h3>
-                    <textarea name="descriptionJeu" id="descriptionJeu" placeholder="Description du jeu" required required class="inputText" required></textarea>
+                    <textarea name="description_jeu" id="descriptionJeu" placeholder="Description du jeu" required required class="inputText" required></textarea>
                 </div>
                 <div>
                     <h3>URL de la cover</h3>
