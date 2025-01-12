@@ -52,15 +52,15 @@
                 </div>
                 <div>
                     <h3>Description du jeu</h3>
-                    <textarea name="description_jeu" id="descriptionJeu" placeholder="Description du jeu" required required class="inputText" required></textarea>
+                    <textarea name="description_jeu" id="descriptionJeu" placeholder="Description du jeu" required class="inputText"></textarea>
                 </div>
                 <div>
                     <h3>URL de la cover</h3>
-                    <input type="url" name="coverJeu" id="coverJeu" placeholder="URL de la cover" required required class="inputText" required>
+                    <input type="url" name="coverJeu" id="coverJeu" placeholder="URL de la cover" required class="inputText">
                 </div>
                 <div>
                     <h3>URL du site</h3>
-                    <input type="url" name="siteJeu" id="siteJeu" placeholder="URL du site" required required class="inputText" required>
+                    <input type="url" name="siteJeu" id="siteJeu" placeholder="URL du site" value="jeu" class="inputText">
                 </div>
 
                 <button id="buttonAjout">AJOUTER LE JEU</button>
