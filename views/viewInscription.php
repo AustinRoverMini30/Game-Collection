@@ -12,6 +12,8 @@
     <?php include './views/partials/header.php'; ?>
 
     <main>
+        <?php echo $error ?>
+        
         <div class="form-container">
             <h2>Inscription</h2>
             <form action="inscription" method="POST" id="formulaireInscription">

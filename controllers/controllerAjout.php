@@ -20,6 +20,11 @@ if (isset($_POST['recherche'])) {
     header("Location: ajout");
 } else {
     $result = $model->getAllGamesMatches("");
+
+    if ($result == "<h2 id=\"résultatsTitre\">Résultats de la recherche</h2><div id=\"resultatJeux\"></div>") {
+        header('Location: formulaireAjout');
+    }
+
     include './views/viewAjout.php';
 }
 

@@ -12,6 +12,9 @@
     <?php include 'partials/header.php'; ?>
 
     <main>
+
+        <?php echo $error ?>
+
         <div class="form-container">
             <h2>Se connecter à Game Collection</h2>
             <form action="connexion" method="POST" id="formulaireConnexion">
