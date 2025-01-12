@@ -16,7 +16,9 @@ if (isset($_POST['nomJeu']) && isset($_POST['editeurJeu']) && isset($_POST['sort
     $model->addGame($nomJeu, $editeurJeu, $sortieJeu, $plateforme, $descriptionJeu, $coverJeu, $siteJeu);
     $model->addGameToLibrary($_SESSION['user_id'], $nomJeu);
 
-    header("Location: ajout");
+    header('Location: ajout');
+
+    
 }else{
     include './views/viewAjoutFormulaire.php';
 }

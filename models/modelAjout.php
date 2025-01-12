@@ -45,26 +45,38 @@ class ModelAjout {
         $result .= "<div id=\"resultatJeux\">";
 
         foreach ($stmt as $row) {
-        $result .= "    <div class=\"jeu\" style=\"background-image:url('".$row['URL_cover']."')\">";
-        $result .= "        <div class=\"jeuInfo\">";
+            $result .= "    <div class=\"jeu\" style=\"background-image:url('".$row['URL_cover']."')\">";
+            $result .= "        <div class=\"jeuInfo\">";
 
-        if (isset($row['id_util'])) {
-            $result .= "                <form action='jeu' method='POST' class=\"jeuInfoLeft\">";
-        }else{
-            $result .= "                <form action='ajout' method='POST' class=\"jeuInfoLeft\">";
-        }
+            if (isset($row['id_util'])) {
+                $result .= "                <form action='jeu' method='POST' class=\"jeuInfoLeft\">";
+            }else{
+                $result .= "                <form action='ajout' method='POST' class=\"jeuInfoLeft\">";
+            }
 
-        $result .= "                    <input type=\"hidden\" name=\"idJeu\" value=\"".$row['id_jeu']."\">";
-        $result .= "                    <h2 class=\"nomJeu\">".$row['nom_jeu']."</h2>";
-        $result .= "                    <h2 class=\"plateformeJeu\">".$row['plateformes_jeu']."</h2>";
+            $result .= "                    <input type=\"hidden\" name=\"idJeu\" value=\"".$row['id_jeu']."\">";
+            $result .= "                    <h2 class=\"nomJeu\">".$row['nom_jeu']."</h2>";
+            $result .= "                    <h2 class=\"plateformeJeu\">";
+            
+            $stmt1 = $this->pdo->prepare("SELECT * FROM SUPPORT AS S INNER JOIN JEU AS J ON S.id_jeu = J.id_jeu INNER JOIN PLATEFORME AS P ON P.id_plateforme = S.id_plateforme 
+            WHERE S.id_jeu = :id_jeu");
+            $stmt1->bindParam(':id_jeu', $row['id_jeu'], PDO::PARAM_STR);
+            $stmt1->execute();
+            $stmt1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
+            
+            foreach ($stmt1 as $plat){
+                $result .= $plat['nom_plateforme']." ";
+            }
+            
+            $result .= "</h2>";
 
-        if (isset($row['id_util'])) {
-            $result .= "                    <button type=\"submit\" class=\"boutonAjouter\">JEU POSSÉDÉ</button></form>";
-        }else{
-            $result .= "                    <button type=\"submit\" class=\"boutonAjouter\">AJOUTER A LA BIBLIOTHEQUE</button></form>";
-        }
-        $result .= "        </div>";
-        $result .= "    </div>";
+            if (isset($row['id_util'])) {
+                $result .= "                    <button type=\"submit\" class=\"boutonAjouter\">JEU POSSÉDÉ</button></form>";
+            }else{
+                $result .= "                    <button type=\"submit\" class=\"boutonAjouter\">AJOUTER A LA BIBLIOTHEQUE</button></form>";
+            }
+            $result .= "        </div>";
+            $result .= "    </div>";
 
         }
 

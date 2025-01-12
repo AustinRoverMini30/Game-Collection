@@ -34,19 +34,19 @@
                 <div>
                     <h3>Plateformes</h3>
                     <div>
-                        <input type="checkbox" name="plateforme" id="plateforme" value="Playstation">
+                        <input type="checkbox" name="plateforme[]" id="plateforme" value="2">
                         <label for="plateforme">Playstation</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="plateforme" id="plateforme" value="Xbox">
+                        <input type="checkbox" name="plateforme[]" id="plateforme" value="4">
                         <label for="plateforme">Xbox</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="plateforme" id="plateforme" value="Nintendo">
+                        <input type="checkbox" name="plateforme[]" id="plateforme" value="3">
                         <label for="plateforme">Nintendo</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="plateforme" id="plateforme" value="PC">
+                        <input type="checkbox" name="plateforme[]" id="plateforme" value="1">
                         <label for="plateforme">PC</label>
                     </div>
                 </div>

@@ -25,7 +25,6 @@ CREATE TABLE JEU (
     nom_jeu VARCHAR(100) NOT NULL,
     editeur_jeu VARCHAR(100) NOT NULL,
     date_sortie DATE NOT NULL,
-    plateformes_jeu VARCHAR(100) NOT NULL,
     desc_jeu VARCHAR(500) NOT NULL,
     URL_cover VARCHAR(500) NOT NULL,
     URL_site VARCHAR(500) NOT NULL
@@ -49,3 +48,8 @@ CREATE TABLE SUPPORT (
     FOREIGN KEY (id_jeu) REFERENCES JEU(id_jeu) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (id_plateforme) REFERENCES PLATEFORME(id_plateforme) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+INSERT INTO PLATEFORME (id_plateforme ,nom_plateforme) VALUES (1, 'PC');
+INSERT INTO PLATEFORME (id_plateforme ,nom_plateforme) VALUES (2, 'PlayStation');
+INSERT INTO PLATEFORME (id_plateforme ,nom_plateforme) VALUES (3, 'Nintendo');
+INSERT INTO PLATEFORME (id_plateforme ,nom_plateforme) VALUES (4, 'Xbox');

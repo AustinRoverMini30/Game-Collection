@@ -17,7 +17,7 @@
             <div id="left">
                 <div>
                     <h2><?php echo $result['nom_jeu'] ?></h2>
-                    <p><?php echo $result['plateformes_jeu'] ?></p>
+                    <p><?php echo $model->getGamePlatforms($result['id_jeu']) ?></p>
                     <p>Temps passé : <?php echo $result['nb_heures_jouees'] ?> h</p>
                 </div>
 

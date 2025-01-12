@@ -32,6 +32,21 @@ class ModelJeu {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    public function getGamePlatforms($id_jeu){
+        $stmt = $this->pdo->prepare("SELECT * FROM SUPPORT AS S INNER JOIN JEU AS J ON S.id_jeu = J.id_jeu INNER JOIN PLATEFORME AS P ON P.id_plateforme = S.id_plateforme WHERE S.id_jeu = :id_jeu");
+        $stmt->bindParam(':id_jeu', $id_jeu, PDO::PARAM_INT);
+        $stmt->execute();
+        $stmt = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        $result = "";
+
+        foreach ($stmt as $plat){
+            $result .= $plat['nom_plateforme']." ";
+        }
+
+        return $result;
+    }
+
         public function removeGameFromLibrary($userId, $gameId)
     {
         $stmt = $this->pdo->prepare("DELETE FROM BIBLIOTHEQUE WHERE id_util = :userId AND id_jeu = :gameId");

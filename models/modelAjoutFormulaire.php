@@ -21,15 +21,21 @@ class ModelAjoutFormulaire {
             $stmt->execute();
         }
 
-        $stmt = $this->pdo->prepare("INSERT INTO JEU (nom_jeu, editeur_jeu, date_sortie, plateformes_jeu, desc_jeu, URL_cover, URL_site) VALUES (:nom_jeu, :editeur_jeu, :date_sortie, :plateformes_jeu, :desc_jeu, :url_cover, :url_site)");
+        $stmt = $this->pdo->prepare("INSERT INTO JEU (nom_jeu, editeur_jeu, date_sortie, desc_jeu, URL_cover, URL_site) VALUES (:nom_jeu, :editeur_jeu, :date_sortie, :desc_jeu, :url_cover, :url_site)");
         $stmt->bindParam(':nom_jeu', $nom_jeu);
         $stmt->bindParam(':editeur_jeu', $editeur_jeu);
         $stmt->bindParam(':date_sortie', $date_sortie);
-        $stmt->bindParam(':plateformes_jeu', $plateformes_jeu);
         $stmt->bindParam(':desc_jeu', $desc_jeu);
         $stmt->bindParam(':url_cover', $url_cover);
         $stmt->bindParam(':url_site', $url_site);
         $stmt->execute();
+
+        foreach ($plateformes_jeu as $plateforme) {
+            $stmt = $this->pdo->prepare("INSERT INTO SUPPORT (id_jeu, id_plateforme) VALUES ((SELECT id_jeu FROM JEU WHERE nom_jeu = :nom_jeu), :id_plateforme)");
+            $stmt->bindParam(':nom_jeu', $nom_jeu);
+            $stmt->bindParam(':id_plateforme', $plateforme, PDO::PARAM_INT);
+            $stmt->execute();
+        }
     }
 
     public function addGameToLibrary($userId, $gameName)

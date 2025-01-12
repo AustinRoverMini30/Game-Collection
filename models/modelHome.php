@@ -25,7 +25,19 @@ class modelHome {
             $result .= "        <span class='jeuInfo'>";
             $result .= "            <span class='jeuInfoLeft'>";
             $result .= "                <span class='nomJeu'>".$row['nom_jeu']."</span>";
-            $result .= "                <span class='plateformeJeu'>".$row['plateformes_jeu']."</span>";
+            $result .= "                <span class='plateformeJeu'>";
+
+            $stmt1 = $this->pdo->prepare("SELECT * FROM SUPPORT AS S INNER JOIN JEU AS J ON S.id_jeu = J.id_jeu INNER JOIN PLATEFORME AS P ON P.id_plateforme = S.id_plateforme 
+            WHERE S.id_jeu = :id_jeu");
+            $stmt1->bindParam(':id_jeu', $row['id_jeu'], PDO::PARAM_STR);
+            $stmt1->execute();
+            $stmt1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
+            
+            foreach ($stmt1 as $plat){
+                $result .= $plat['nom_plateforme']." ";
+            }
+
+            $result .= "</span>";
             $result .= "            </span>";
             $result .= "            <span class='jeuInfoRight'>";
             $result .= "                <span class='heureJouees'>".$row['nb_heures_jouees']." h</span>";
